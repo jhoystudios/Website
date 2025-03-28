@@ -25,8 +25,10 @@
 .portfolio-item img {
   width: 100%;
   height: auto;
+  object-fit: cover;
   border-radius: 4px;
   margin-bottom: 10px;
+  align-content: center;
 }
 
 .portfolio-item h3 {
@@ -39,6 +41,7 @@
   font-size: 14px;
   color: #B0B0B0;
   line-height: 1.5;
+  position: relative;
 }
 
 /* Button styles */
@@ -56,3 +59,33 @@
 .portfolio-item a:hover {
   background-color: #505050;
 } 
+
+/* Portfolio Item Overlay */
+.portfolio-item {
+  position: relative; /* Ensures the overlay is positioned within this container */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-item .overlay {
+  position: absolute; /* Positions overlay relative to .portfolio-item */
+  top: 0;
+  left: 0;
+  width: 100%; /* Matches the dimensions of the portfolio item */
+  height: 100%; /* Matches the dimensions of the portfolio item */
+  background-color: rgba(0, 0, 0, 0.6); /* Transparent black overlay */
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s;
+  border-radius: 10px;
+}
+
+.portfolio-item:hover .overlay {
+  opacity: 1; /* Displays overlay on hover */
+}
