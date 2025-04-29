@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li>MTN non-expiry data</li>
+                <li>All network Agent SIM</li>
+                <li>AIRTELTIGO DATA BUNDLE</li>
+                <li>Super power bank</li>
+                <li>AFA REGISTRATION MTN</li>
+                <li>AT CALL BUNDLE/MINUTES</li>
+                <li>MTN dynamic SIM card</li>
+            </ul>
+            <div class="social-links">
+                <a href="#facebook">Facebook</a>
+                <a href="#whatsapp">WhatsApp</a>
+                <a href="#telegram">Telegram</a>
+            </div>
+            <div class="share-language">
+                <a href="#share">Share</a>
+                <a href="#english">English</a>
+            </div>
+        </nav>
+        <main class="form-container">
+            <form id="customer-form">
+                <div class="form-group">
+                    <label for="group-size">Group size *</label>
+                    <select id="group-size" name="group-size">
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date *</label>
+                    <input type="date" id="date" name="date">
+                </div>
+                <div class="form-group">
+                    <label for="name">Customer Name *</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone">
+                </div>
+                <button type="button" id="next-button">Next</button>
+            </form>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

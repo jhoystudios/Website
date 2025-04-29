@@ -1,7 +1,7 @@
 /* General styles */
 body {
-  background-color: #181818;
-  color: #FFFFFF;
+  background-color: #ffffff;
+  color: #1b1b1b;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -17,12 +17,12 @@ body {
 
 /* Main content styles */
 .main-content {
-  width: 100%; /* Adjust width as needed */
-  max-width: 1200px;
-  padding: 20px;
-  background-color: #121212;
+  width: 98%; /* Adjust width as needed */
+  max-width: 1fr;
+  padding: 0 0 0 0;
+  background-color: #7e7e7e;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-  border-radius: 8px;
+  border-radius: 0;
   box-sizing: border-box;
   text-align: center; /* Centers text within the main content */
 }
@@ -31,4 +31,11 @@ body {
 .main-content h1 {
   font-size: 24px;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 1fr; 
+  } 
+
 }
