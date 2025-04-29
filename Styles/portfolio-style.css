@@ -2,13 +2,15 @@
 .portfolio-section {
   padding: 40px;
   background-color: #b7b7b7;
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   box-sizing: border-box;
 }
 
 .portfolio-item {
+  align-items: center;
+  align-content: center;
   background-color: #202020;
   padding: 20px;
   border-radius: 8px;
