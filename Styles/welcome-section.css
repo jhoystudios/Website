@@ -1,0 +1,67 @@
+/* Glassy Welcome Section */
+.welcome-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: rgba(40, 40, 40, 0.4); /* Semi-transparent background */
+    color: #FFFFFF;
+    border: solid 1px rgba(255, 255, 255, 0.344);
+    border-radius: 15px;
+    backdrop-filter: blur(100px); /* Creates the frosted glass effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    max-width: 100%;
+    margin: 40px auto;
+}
+
+/* Enhancing the text visibility */
+.welcome-section h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.welcome-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    background-color: rgba(214, 214, 214, 0.233); /* Slight transparency */
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 24px;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: rgba(255, 135, 29, 0.9); /* Slightly darker on hover */
+}
+
+/* Container for Background Circles */
+.welcome-section::before,
+.welcome-section::after {
+    content: "";
+    position: absolute;
+    width: 200px; /* Circle size */
+    height: 200px;
+    border-radius: 50%;
+    background: rgba(231, 231, 231, 0.1); /* Light transparent effect */
+    z-index: -1;
+    filter: blur(30px);
+}
+
+/* Specific Positions for Circles */
+.welcome-section::before {
+    top: -50px;
+    left: -80px;
+}
+
+.welcome-section::after {
+    bottom: -50px;
+    right: -80px;
+}
