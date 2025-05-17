@@ -30,3 +30,105 @@ body {
     padding: 50px;
     font-size: 24px;
 }
+
+/* -----------------------------------------------*/
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: #FFFFFF;
+}
+
+/* Container & Layout */
+.container {
+    display: flex;
+    flex-direction: row; /* Default layout for larger screens */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+}
+
+/* Responsive Grid for Services */
+.service-tile {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    width: calc(50% - 20px); /* Ensures max of 2 tiles per row */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+.service-tile:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #202020;
+    padding: 15px 20px;
+}
+
+/* Logo Styling */
+.logo img {
+    width: 120px; /* Adjust as needed */
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #383838;
+    border-radius: 5px;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-tile {
+        width: 100%; /* Stacks tiles on smaller screens */
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
